@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/klinikabm-public/static/css/main.140f8ae4.css",
+    "main.js": "/klinikabm-public/static/js/main.38276b61.js",
+    "static/media/1.png": "/klinikabm-public/static/media/1.055b9a9385e46505c606.png",
+    "static/media/HERO_ILUSTRATION.png": "/klinikabm-public/static/media/HERO_ILUSTRATION.828caf10ea0822db5da1.png",
+    "static/media/background.png": "/klinikabm-public/static/media/background.f5ec931fe96a79314b34.png",
+    "static/media/HERO_ILUSTRATION_MOBILE.png": "/klinikabm-public/static/media/HERO_ILUSTRATION_MOBILE.76966cd64bf522ce091a.png",
+    "static/media/FOOTER_BG.png": "/klinikabm-public/static/media/FOOTER_BG.d811169281ab645efb86.png",
+    "static/media/MAP_BACKGROUND.png": "/klinikabm-public/static/media/MAP_BACKGROUND.cca8a277b8c0ad4c480f.png",
+    "static/media/MAP_BACKGROUND_VERTICAL.png": "/klinikabm-public/static/media/MAP_BACKGROUND_VERTICAL.f296d9846a4e4cdfa4a7.png",
+    "static/media/PHOTO_2.png": "/klinikabm-public/static/media/PHOTO_2.29db798515e0713d130a.png",
+    "static/media/PHOTO_1.png": "/klinikabm-public/static/media/PHOTO_1.8b8d945e050e2c8eb630.png",
+    "static/media/PHOTO_3.png": "/klinikabm-public/static/media/PHOTO_3.eae210f53f407dc4ca59.png",
+    "static/media/BMW.png": "/klinikabm-public/static/media/BMW.51c9e603e821a3b4a566.png",
+    "static/media/4.png": "/klinikabm-public/static/media/4.0903b861f6845ad29f4d.png",
+    "static/media/2.png": "/klinikabm-public/static/media/2.f4e74082cdfe462213f1.png",
+    "static/media/3.png": "/klinikabm-public/static/media/3.a65345aa0c707ca261b1.png",
+    "static/media/CTA_BACKGROUND_DARK.png": "/klinikabm-public/static/media/CTA_BACKGROUND_DARK.ee2c7ab7aeba90238e0a.png",
+    "static/media/CTA_BACKGROUND.png": "/klinikabm-public/static/media/CTA_BACKGROUND.3d57512a63ccc3da29ce.png",
+    "static/media/LOGOTYPE_WHITE.svg": "/klinikabm-public/static/media/LOGOTYPE_WHITE.0e8a3be21d69f50c4b1d06f9a77507a2.svg",
+    "static/media/ALPINA.png": "/klinikabm-public/static/media/ALPINA.c5122ddf0fafd856673f.png",
+    "static/media/LOGOTYPE.svg": "/klinikabm-public/static/media/LOGOTYPE.724a3efbc45da68dcda698de8b058eb0.svg",
+    "static/media/Question.svg": "/klinikabm-public/static/media/Question.b9fe2f048505fb2e7b67f0e12158ded8.svg",
+    "index.html": "/klinikabm-public/index.html",
+    "static/media/Star.svg": "/klinikabm-public/static/media/Star.bfc83a8e29c0d382bae6e060c29332a6.svg",
+    "static/media/ChevronUp.svg": "/klinikabm-public/static/media/ChevronUp.ff0df4d6d88c967e0e2d350c3e1ab662.svg",
+    "main.140f8ae4.css.map": "/klinikabm-public/static/css/main.140f8ae4.css.map",
+    "main.38276b61.js.map": "/klinikabm-public/static/js/main.38276b61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.140f8ae4.css",
+    "static/js/main.38276b61.js"
+  ]
+}
