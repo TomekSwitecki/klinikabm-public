@@ -1,0 +1,95 @@
+@import "../../shadows.scss";
+@import "../../colors.scss";
+
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  text-align: center;
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  white-space: nowrap;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.button__text {
+  text-shadow: $primary-button-text-shadow;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.button__primary {
+  color: $white;
+  padding: 12px 48px;
+  border-radius: 4px;
+  background: $reversed-blue-gradient;
+  box-shadow: $primary-button-shadow;
+
+  width: min-content;
+  min-width: 190px;
+
+}
+
+.button__primary:hover {
+
+  background: $primary-blue-gradient;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  outline: 2px solid $blue-de-france;
+
+  border-radius: 6px;
+  box-shadow: $primary-button-shadow-hover;
+}
+
+.button__ghost {
+  background: none;
+  padding: 8px 32px;
+  color: $button-default-gray;
+}
+
+.button__ghost:hover {
+  color: $primary-text-color;
+}
+
+.button__ghost:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.button__ghost::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+
+  width: 115px;
+  height: 4px;
+
+  background: linear-gradient(90deg, $blue-de-france 0%, $blue-de-france 33%, $dark-midnight-blue 33%, $dark-midnight-blue 66%, $fire-engine-red 66%, $fire-engine-red 100%);
+  opacity: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.button__appended {
+  gap: 4px;
+  padding: 12px 24px;
+}
+
+.button__append {
+  fill: $white;
+  display: flex;
+  align-self: center;
+}

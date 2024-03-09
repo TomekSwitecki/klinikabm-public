@@ -1,0 +1,109 @@
+@mixin card_elevation {
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.07),
+    0px 0.893452px 0px rgba(0, 0, 0, 0.0417275),
+    0px 0.266004px 0px rgba(0, 0, 0, 0.0282725);
+}
+
+@mixin smooth_shadow {
+  box-shadow: 0px -2px 80px rgba(0, 0, 0, 0.09),
+    0px -0.835552px 33.4221px rgba(0, 0, 0, 0.0646969),
+    0px -0.446726px 17.869px rgba(0, 0, 0, 0.0536497),
+    0px -0.250431px 10.0172px rgba(0, 0, 0, 0.045),
+    0px -0.133002px 5.32008px rgba(0, 0, 0, 0.0363503),
+    0px -0.0553451px 2.21381px rgba(0, 0, 0, 0.0253031);
+}
+
+@mixin glow($color, $opacity: 0.25) {
+  box-shadow: 0px 0px 11px 3px rgba($color, $opacity);
+}
+
+$navbar-custom-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05),
+  0px 3px 6px 0px rgba(0, 0, 0, 0.05), 0px 10px 10px 0px rgba(0, 0, 0, 0.04),
+  0px 23px 14px 0px rgba(0, 0, 0, 0.03), 0px 40px 16px 0px rgba(0, 0, 0, 0.01),
+  0px 63px 18px 0px rgba(0, 0, 0, 0);
+$opinion-card-custom-shadow: -6px 6px 12px rgba(214, 214, 214, 0.2),
+  6px -6px 12px rgba(214, 214, 214, 0.2),
+  -6px -6px 12px rgba(255, 255, 255, 0.9), 6px 6px 15px rgba(214, 214, 214, 0.9);
+
+$primary-button-shadow: 0px -0.05534512922167778px 1.1899203062057495px 0px rgba(0, 119, 191, 0.06),
+  0px -0.13300204277038574px 2.859543800354004px 0px rgba(0, 119, 191, 0.09),
+  0px -0.25043103098869324px 5.384267330169678px 0px rgba(0, 119, 191, 0.12),
+  0px -0.4467261731624603px 9.604613304138184px 0px rgba(0, 119, 191, 0.14),
+  0px -0.8355522155761719px 17.964372634887695px 0px rgba(0, 119, 191, 0.17),
+  0px -2px 43px 0px rgba(0, 119, 191, 0.23);
+
+$primary-button-shadow-hover: 0px -0.05534512922167778px 1.1899203062057495px 0px
+    rgba(0, 119, 191, 0.06),
+  0px -0.13300204277038574px 2.859543800354004px 0px rgba(0, 119, 191, 0.09),
+  0px -0.25043103098869324px 5.384267330169678px 0px rgba(0, 119, 191, 0.12),
+  0px -0.4467261731624603px 9.604613304138184px 0px rgba(0, 119, 191, 0.14),
+  0px -0.8355522155761719px 17.964372634887695px 0px rgba(0, 119, 191, 0.17),
+  0px -2px 26px 0px rgba(0, 119, 191, 0.41);
+
+$primary-button-text-shadow: 0px 0px 11px rgba(255, 255, 255, 0.25);
+
+$hero-custom-shadow: 0px 0px 0px 0px rgba(69, 155, 212, 0.04),
+  0px 7px 15px 0px rgba(69, 155, 212, 0.04),
+  0px 28px 28px 0px rgba(69, 155, 212, 0.03),
+  0px 63px 38px 0px rgba(69, 155, 212, 0.02),
+  0px 112px 45px 0px rgba(69, 155, 212, 0.01),
+  0px 175px 49px 0px rgba(69, 155, 212, 0);
+
+$faq-custom-shadow: 8px 8px 20px 0px #d9d9d9e5, -8px -8px 16px 0px #ffffffe5,
+  8px -8px 16px 0px #d9d9d933, -8px 8px 16px 0px #d9d9d933;
+
+$label-custom-shadow: 0px 0px 11px #ffffff40;
+
+$uslugi-map-elevation: 0.04134456440806389px 1.202993392944336px
+    3.344907522201538px 0px rgba(57, 57, 57, 0.01),
+  0.18191608786582947px 5.293170928955078px 6.9259257316589355px 0px
+    rgba(57, 57, 57, 0.02),
+  0.4465212821960449px 12.992329597473145px 13.8125px 0px rgba(57, 57, 57, 0.03),
+  0.8599669337272644px 25.02226448059082px 27.074073791503906px 0px
+    rgba(57, 57, 57, 0.03),
+  1.4470597505569458px 42.10477066040039px 49.780094146728516px 0px
+    rgba(57, 57, 57, 0.04),
+  2.2326064109802246px 64.9616470336914px 85px 0px rgba(57, 57, 57, 0.05);
+
+//Card
+$card-shadow: 0px -0.05534512922167778px 2.2138051986694336px 0px rgba(0, 0, 0, 0.03),
+  0px -0.13300204277038574px 5.32008171081543px 0px rgba(0, 0, 0, 0.04),
+  0px -0.25043103098869324px 10.017241477966309px 0px rgba(0, 0, 0, 0.05),
+  0px -0.4467261731624603px 17.869047164916992px 0px rgba(0, 0, 0, 0.05),
+  0px -0.8355522155761719px 33.422088623046875px 0px rgba(0, 0, 0, 0.06),
+  0px -2px 80px 0px rgba(0, 0, 0, 0.09);
+
+$card-white-glow: 0px 0.6296296119689941px 5.43055534362793px 0px
+    rgba(255, 255, 255, 0.02),
+  0px 2.7703704833984375px 11.244444847106934px 0px rgba(255, 255, 255, 0.04),
+  0px 6.800000190734863px 22.424999237060547px 0px rgba(255, 255, 255, 0.05),
+  0px 13.096296310424805px 43.9555549621582px 0px rgba(255, 255, 255, 0.05),
+  0px 22.037036895751953px 80.81944274902344px 0px rgba(255, 255, 255, 0.07),
+  0px 34px 138px 0px rgba(255, 255, 255, 0.09);
+
+//Avatar
+$avatar-primary-shadow: 0px 0px 0px 0px rgba(3, 88, 156, 0.15),
+  0px 2px 5px 0px rgba(3, 88, 156, 0.15), 0px 8px 8px 0px rgba(3, 88, 156, 0.13),
+  0px 18px 11px 0px rgba(3, 88, 156, 0.08),
+  0px 33px 13px 0px rgba(3, 88, 156, 0.02),
+  0px 51px 14px 0px rgba(3, 88, 156, 0);
+$avatar-light-blue-shadow: 0px 0px 0px 0px rgba(71, 157, 226, 0.15),
+  0px 3px 7px 0px rgba(71, 157, 226, 0.15),
+  0px 14px 14px 0px rgba(71, 157, 226, 0.13),
+  0px 31px 18px 0px rgba(71, 157, 226, 0.08),
+  0px 54px 22px 0px rgba(71, 157, 226, 0.02),
+  0px 85px 24px 0px rgba(71, 157, 226, 0);
+$avatar-red-shadow: 0px 0px 0px 0px rgba(220, 30, 59, 0.15),
+  0px 2px 4px 0px rgba(220, 30, 59, 0.15),
+  0px 8px 8px 0px rgba(220, 30, 59, 0.13),
+  0px 18px 11px 0px rgba(220, 30, 59, 0.08),
+  0px 32px 13px 0px rgba(220, 30, 59, 0.02),
+  0px 49px 14px 0px rgba(220, 30, 59, 0);
+$avatar-black-shadow: 0px 0px 0px 0px rgba(19, 38, 42, 0.15),
+  0px 3px 7px 0px rgba(19, 38, 42, 0.15),
+  0px 14px 14px 0px rgba(19, 38, 42, 0.13),
+  0px 31px 18px 0px rgba(19, 38, 42, 0.08),
+  0px 54px 22px 0px rgba(19, 38, 42, 0.02),
+  0px 85px 24px 0px rgba(19, 38, 42, 0);
+
+$map-glow: 0px 0px 23px 1.5px rgba(255, 255, 255, 0.25);

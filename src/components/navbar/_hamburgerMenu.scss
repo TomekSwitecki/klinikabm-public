@@ -1,0 +1,113 @@
+@import "../../shadows.scss";
+@import "../../colors.scss";
+@import "../../anim.scss";
+
+.hamburger__container {
+  position: relative;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+
+  padding: 12px 24px;
+
+  background: $reversed-blue-gradient;
+  box-shadow: $primary-button-shadow;
+
+  border-radius: 4px;
+  align-items: center;
+  @include smooth;
+}
+
+.hamburger:hover {
+
+  background: $primary-blue-gradient;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  outline: 2px solid $blue-de-france;
+
+  border-radius: 6px;
+  box-shadow: $primary-button-shadow-hover;
+
+  .hamburger__lines-wrapper {
+    .line {
+      background-color: $blue-de-france;
+    }
+
+  }
+}
+
+
+.hamburger__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 8px;
+  align-items: center;
+}
+
+.hamburger__lines-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.line {
+  width: 18px;
+  height: 2px;
+  background-color: $white;
+  border-radius: 4px;
+}
+
+.hamburger__menu {
+  color: $white;
+  user-select: none;
+  text-align: center;
+  text-shadow: $primary-button-text-shadow;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.hamburger__dropdown {
+  display: none;
+  position: absolute;
+  top: 77px;
+  left: -135px;
+  flex-direction: column;
+  gap: 42px;
+  background: $white;
+  padding: 24px;
+  box-shadow: $navbar-custom-shadow;
+  border-bottom: 5px solid $light-outline;
+  @include smooth;
+  border-radius: 4px;
+}
+
+/* Add any additional styling needed for your navbar */
+@media (max-width: 620px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger__dropdown--active {
+    display: flex;
+  }
+
+  .navbar__buttons {
+    display: none;
+  }
+}
+
+@media (max-width: 410px) {
+  .hamburger {
+    padding: 16px 16px;
+  }
+
+  .hamburger__dropdown {
+    left: -190px;
+  }
+}

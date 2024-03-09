@@ -1,0 +1,40 @@
+@import "../../colors.scss";
+@import "../../shadows.scss";
+@import "../../anim.scss";
+
+.label {
+  font-family: Poppins;
+  display: flex;
+  gap: 16px;
+  height: fit-content;
+  align-items: center;
+  @include smooth;
+}
+
+.label__text,
+.label__text a {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: left;
+  color: $white;
+  text-shadow: $label-custom-shadow;
+  user-select: text;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.labels__contact {
+  color: $white;
+  text-shadow: $label-custom-shadow;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.label:hover {
+  transform: translateY(-2px);
+  @include smooth;
+}

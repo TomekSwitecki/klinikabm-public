@@ -1,0 +1,75 @@
+@import "../../colors.scss";
+@import "../../shadows.scss";
+@import "../../anim.scss";
+
+.hero__container {
+  grid-column: 1 / span 12;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-height: 800px;
+  margin-top: 128px;
+  box-shadow: $hero-custom-shadow;
+
+  h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 130%;
+    color: $light;
+    height: 756px;
+    margin: 64px auto 0 auto;
+    width: fit-content;
+    justify-content: center;
+    box-shadow: $hero-custom-shadow;
+  }
+
+  .hero__container--left {
+    display: flex;
+    flex-direction: column;
+    background: url("/src/resources/Hero/CTA_BACKGROUND.png");
+  }
+
+  .hero_photo--mobile {
+    display: none;
+  }
+
+  .hero_photo--desktop {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    object-position: left;
+    width: 100%;
+    @include smooth(all, 0.66s);
+  }
+
+  @media (max-width: 1015px) {
+    .hero__container {
+      justify-content: center;
+    }
+
+    .hero_photo--mobile {
+      display: block;
+      object-fit: cover;
+      height: 100%;
+      object-position: left;
+      width: 100%;
+      @include smooth(all, 0.66s);
+    }
+
+    .hero_photo--desktop {
+      display: none;
+      @include smooth(all, 0.66s);
+    }
+  }
+
+  @media (max-width: 535px) {
+    .hero_photo--mobile {
+      display: none;
+    }
+
+    .hero__container--left {
+      background: url("/src/resources/Hero/CTA_BACKGROUND_DARK.png");
+    }
+  }
+}

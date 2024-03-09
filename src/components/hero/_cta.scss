@@ -1,0 +1,175 @@
+@import "../../colors.scss";
+@import "../../anim.scss";
+@import "../../shadows.scss";
+
+.cta__wrapper {
+  user-select: none;
+  box-sizing: border-box;
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  padding: 64px;
+  max-width: 500px;
+
+  .divider_container {
+    width: 80%;
+  }
+
+  .divider__part {
+    height: 6px;
+  }
+
+  @include smooth(all, 0.66s);
+}
+
+.cta {
+  position: relative;
+  color: $primary-text-color;
+  text-shadow: 0px 0px 11px 0px $cta-paragraph-text-shadow-light;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  white-space: nowrap;
+}
+
+.cta__bmw {
+  font-weight: 700;
+}
+
+.cta__paragraph {
+  color: $secondary-text-gray;
+  text-shadow: 0px 4px 27px $cta-paragraph-text-shadow;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 225%;
+  max-width: 350px;
+}
+
+.cta__partners {
+  box-sizing: border-box;
+  display: flex;
+  max-width: 435px;
+  min-width: 435px;
+  padding: 16px 24px;
+  justify-content: space-between;
+  bottom: -30px;
+  right: -1px;
+  align-items: center;
+  position: relative;
+
+  box-shadow: $card-shadow;
+  background-color: $black;
+  @include smooth(all, 0.66s);
+
+  .logo,
+  .logo-button {
+    width: 64px;
+    height: 64px;
+  }
+
+  .logo--bmw {
+    opacity: 70%;
+  }
+
+  .logo--bmw,
+  .logo--alpina {
+    filter: saturate(0%);
+  }
+
+  .logo--alpina {
+    mix-blend-mode: exclusion;
+  }
+
+  .logo-button {
+    background: none;
+    border: none;
+  }
+
+  .logo-button:hover {
+    cursor: pointer;
+
+    .logo--bmw,
+    .logo--alpina {
+      filter: saturate(100%);
+      opacity: 100%;
+    }
+
+    .logo--alpina {
+      mix-blend-mode: normal;
+    }
+  }
+
+  .cta__partners-logos {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.cta__partners-label {
+  color: $secondary-text-gray;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.cta__partners:hover {
+  .cta__partners-label {
+    color: $white;
+  }
+
+  @include hover;
+}
+
+@media (max-width: 1415px) {
+  .cta__wrapper {
+    padding: 48px 48px;
+    @include smooth(all, 0.66s);
+  }
+
+  .cta__paragraph {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .app {
+    padding: 0 48px;
+    @include smooth(all, 0.66s);
+  }
+}
+
+@media (max-width: 535px) {
+  .cta {
+    color: $white;
+    font-size: 54px;
+  }
+
+  .cta__partners {
+    min-width: unset;
+    right: 15px;
+    bottom: -15px;
+    outline: 4px solid $secondary-text-color;
+  }
+
+  .cta__wrapper {
+    .button {
+      width: 100%;
+      @include smooth;
+    }
+
+    .button__primary:hover {
+      -webkit-text-fill-color: $white;
+    }
+  }
+
+  .cta__paragraph {
+    color: $light-outline;
+    text-shadow: 0px 4px 27px $cta-paragraph;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 225%;
+  }
+}

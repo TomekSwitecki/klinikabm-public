@@ -1,0 +1,35 @@
+@import "../../colors.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.header__logotype {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.logotype__text {
+  font-family: "Comfortaa";
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 0em;
+  margin: 0;
+  text-align: left;
+}
+
+.logotype__text--klinika {
+  color: $dark-midnight-blue;
+  font-weight: 300;
+}
+
+.logotype__text--bm {
+  font-weight: 700;
+  background: $primary-blue-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

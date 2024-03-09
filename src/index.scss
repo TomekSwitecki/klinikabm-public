@@ -1,0 +1,44 @@
+@import "partials";
+@import "colors";
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+h1,
+h2,
+p,
+button {
+  font-family: "Poppins";
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.grid-fill {
+  max-width: 1440px;
+  grid-column: 1 / span 12;
+}
+
+body {
+  background-image: url(../src/resources/BACKGROUND_PATTERN.png);
+  background-size: 250px;
+  overflow-x: hidden;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+@media (max-width: 500px) {
+  .app {
+    padding: 0;
+    display: unset;
+  }
+}

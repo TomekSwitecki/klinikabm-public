@@ -1,0 +1,16 @@
+@keyframes slideAnimation {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-5%);
+  }
+}
+
+.slider-track {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  animation: slideAnimation 25s linear infinite;
+}

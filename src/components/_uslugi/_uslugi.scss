@@ -1,0 +1,53 @@
+@import "../../shadows.scss";
+@import "../../colors.scss";
+@import "../../anim.scss";
+
+.uslugi__container {
+  display: flex;
+
+  padding: 64px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  width: 100%;
+  border-radius: 15px;
+  border: 15px solid $divider;
+  background: url("/src/resources/Uslugi/MAP_BACKGROUND.png");
+  background-size: auto;
+
+  box-shadow: $uslugi-map-elevation;
+  @include smooth;
+}
+
+.uslugi__card-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+  @include smooth;
+}
+
+@media screen and (max-width: 1000px) {
+  .uslugi__container {
+    padding: 64px 32px;
+    background: url("/src/resources/Uslugi/MAP_BACKGROUND_VERTICAL.png");
+    background-size: auto;
+    gap: 96px;
+  }
+
+  .uslugi__card-wrapper {
+    flex-wrap: wrap;
+    gap: 96px;
+  }
+}
+
+
+.uslugi__container:hover {
+  border-radius: 40px;
+
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  @include smooth;
+}

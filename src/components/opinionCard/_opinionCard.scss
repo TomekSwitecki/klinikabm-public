@@ -1,0 +1,66 @@
+@import "../../shadows.scss";
+@import "../../colors.scss";
+@import "../../anim.scss";
+
+.opinion-card {
+  height: fit-content;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 32px 32px 32px;
+  width: 345px;
+  border-radius: 5px;
+  background: $white;
+  border: 1px solid $light-outline;
+  box-shadow: $opinion-card-custom-shadow;
+  @include smooth;
+}
+
+.opinion_quotes {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 18px;
+  top: -28px;
+}
+
+.opinion-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.opinion-card__text {
+  color: $secondary-text-color;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 180%;
+}
+
+.opinion-card__sublablel {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  margin-top: 16px;
+  color: $primary-text-color;
+}
+
+.opinion-card__rating {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+
+
+.opinion-card:hover {
+  @include hover();
+}

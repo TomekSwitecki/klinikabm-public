@@ -1,0 +1,67 @@
+@import "../../colors.scss";
+@import "../../anim.scss";
+
+.section__container {
+  max-width: 1440px;
+  grid-column: 1 / span 12;
+  width: 100%;
+  padding: 64px 0;
+  @include smooth;
+}
+
+.section__heading {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 64px;
+  flex-direction: column;
+  @include smooth;
+}
+
+.section__title,
+.section__subtitle {
+  text-wrap: balance;
+  font-family: "Poppins";
+  user-select: none;
+  line-height: 130%;
+  text-align: center;
+  padding: 0 16px;
+  @include smooth;
+}
+
+.section__title {
+  color: $eerie-black;
+  font-weight: 500;
+  font-size: 48px;
+  text-align: center;
+  line-height: 130%;
+}
+
+.section__subtitle {
+  color: $secondary-text-color;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  word-break: normal;
+}
+
+.section__embedded-content,
+.section__embedded-content--full {
+  display: flex;
+  justify-content: center;
+}
+
+.section__embedded-content {
+  padding: 0px 128px;
+  @include smooth;
+}
+
+.section__embedded-content--full {
+  padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .section__embedded-content {
+    padding: 0px 32px;
+    @include smooth;
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../colors.scss";
+@import "../../shadows.scss";
+@import "../../anim.scss";
+
+.divider_container {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  width: 100%;
+  @include smooth(all, 0.66s);
+}
+
+.divider__part--blue,
+.divider__part--dark,
+.divider__part--red {
+  height: 100%;
+  min-height: 4px;
+  display: flex;
+  flex-grow: 1;
+}
+
+.divider__part--blue {
+  background: $blue-de-france;
+  @include glow($blue-de-france);
+}
+
+.divider__part--dark {
+  background: $dark-midnight-blue;
+  @include glow($dark-midnight-blue);
+}
+
+.divider__part--red {
+  background: $fire-engine-red;
+  @include glow($fire-engine-red);
+}

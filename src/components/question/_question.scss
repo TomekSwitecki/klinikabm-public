@@ -1,0 +1,76 @@
+@import "../../colors.scss";
+@import "../..//anim.scss";
+
+.question__container {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 32px 24px 0px;
+  border-bottom: 1px solid $grey;
+  background-color: $white;
+  @include smooth();
+}
+
+.question__container--expanded {
+  background: $descending-blue-gradient;
+  border-bottom: 2px solid $blue-de-france;
+}
+
+.question__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  gap: 16px;
+}
+
+.question__answer {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $secondary-text-gray;
+  position: relative;
+  top: 32px;
+
+  p {
+    margin-bottom: 32px;
+  }
+}
+
+.content__questionGroup {
+  display: flex;
+  gap: 16px;
+  text-align: left;
+}
+
+.question__answer-enter {
+  opacity: 0;
+}
+
+.question__answer-enter-active {
+  opacity: 1;
+  @include smooth(opacity, 500ms);
+}
+
+.question__answer-exit {
+  opacity: 1;
+}
+
+.question__answer-exit-active {
+  opacity: 0;
+  @include smooth(opacity, 150ms);
+}
+
+
+.question__container:hover {
+  @include hover(false);
+}

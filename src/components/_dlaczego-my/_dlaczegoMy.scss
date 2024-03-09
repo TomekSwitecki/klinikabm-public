@@ -1,0 +1,32 @@
+﻿@import "../../colors.scss";
+@import "../../anim.scss";
+
+.dlaczegoMy__container {
+  display: flex;
+  background-image: url("resources/WhyUs/background.png");
+  padding: 64px;
+  gap: 32px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.dlaczegoMy__card-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .dlaczegoMy__container {
+    padding: 48px;
+    @include smooth;
+    background-size: cover;
+  }
+
+  .dlaczegoMy__card-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    @include smooth;
+  }
+}

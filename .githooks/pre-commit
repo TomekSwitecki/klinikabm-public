@@ -1,0 +1,4 @@
+#!/bin/sh
+# Run Prettier on all staged files
+
+npx prettier --write $(git diff --cached --name-only --diff-filter=ACM -- '*.js' '*.jsx' '*.css' '*.scss' '*.html')

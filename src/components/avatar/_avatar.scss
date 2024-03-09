@@ -1,0 +1,54 @@
+@import "../../shadows.scss";
+@import "../../colors.scss";
+
+@mixin variant($type) {
+  @if $type == "primary" {
+    background: $avatar-primary-gradient;
+    box-shadow: $avatar-primary-shadow;
+  } @else if $type == "light-blue" {
+    background: $avatar-light-blue-gradient;
+    box-shadow: $avatar-light-blue-shadow;
+  } @else if $type == "black" {
+    background: $avatar-black-gradient;
+    box-shadow: $avatar-black-shadow;
+  } @else if $type == "red" {
+    background: $avatar-red-gradient;
+    box-shadow: $avatar-red-shadow;
+  } @else {
+    background: $avatar-primary-gradient;
+    box-shadow: $avatar-primary-shadow;
+  }
+}
+
+.avatar__icon_wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.avatar__icon {
+  fill: $white;
+  color: $white;
+  width: 24px;
+  height: 24px;
+}
+
+.avatar__icon_wrapper--primary {
+  @include variant("primary");
+}
+
+.avatar__icon_wrapper--light-blue {
+  @include variant("light-blue");
+}
+
+.avatar__icon_wrapper--red {
+  @include variant("red");
+}
+
+.avatar__icon_wrapper--black {
+  @include variant("black");
+}

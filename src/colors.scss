@@ -1,0 +1,56 @@
+$white: #ffffff;
+$light: #f4f4f4;
+$grey: #c6c6c6;
+$white-secondary: #e3e3e3;
+$black: #292b2d;
+
+//BMW colors
+$blue-de-france: #2d8dde;
+$dark-midnight-blue: #053870;
+$fire-engine-red: #d00d29;
+$eerie-black: #151513;
+
+//Text Color
+$primary-text-color: #292b2d;
+$secondary-text-color: #606060;
+$secondary-text-gray: #999999;
+$cta-paragraph: #ffffff27;
+
+//Text shadows
+$cta-paragraph-text-shadow: rgba(0, 0, 0, 0.25);
+$cta-paragraph-text-shadow-light: rgba(255, 255, 255, 0.25);
+
+//Buttons
+$button-default-gray: #6f7d8f;
+
+//Gradients
+$primary-blue-gradient: linear-gradient(181deg, #024887 32.91%, #0785d6 100%);
+$reversed-blue-gradient: linear-gradient(181deg, #0785d6 31.77%, #024887 100%);
+$descending-blue-gradient: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #ffffff 80.25%,
+    #f3faff 100%
+  ),
+  linear-gradient(0deg, #2d8dde, #2d8dde);
+
+//Outlines
+$light-outline: #d5d5d5;
+$divider: #eeeeee;
+$gold-decorative: #c6bbb2;
+$gold-decorative--low-opacity: rgb(198 187 178 / 14%);
+
+//Avatar
+$avatar-light-blue-gradient: linear-gradient(180deg, #2d8dde 0%, #9ad0f1 100%);
+$avatar-primary-gradient: linear-gradient(181deg, #024887 32.91%, #0785d6 100%);
+$avatar-black-gradient: linear-gradient(180deg, #091e21 0%, #424a51 100%);
+$avatar-red-gradient: linear-gradient(180deg, #d00d29 0%, #ff4e6b 100%);
+
+//Map
+$map-outline: #7d7e8452;
+
+//Footer
+$footer-black: #00000034;
+$footer-border: rgba(255, 255, 255, 0.25);
+$footer-light: #ffffff40;
+$footer-light-grey: #b1b1b1;

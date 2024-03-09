@@ -1,0 +1,55 @@
+@import "../../colors.scss";
+@import "../../shadows.scss";
+@import "../../anim.scss";
+
+.photo-card {
+  box-sizing: border-box;
+  display: flex;
+  padding: 16px 16px 16px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: 317px;
+  background: $white;
+  box-shadow: $card-white-glow;
+
+  .divider_container {
+    height: 4px;
+  }
+
+  @include smooth(all, 0.26s);
+}
+
+.photo-card:hover {
+  @include hover();
+}
+
+.photo-card__text {
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 169%;
+  user-select: none;
+  text-transform: uppercase;
+
+  color: transparent;
+  background: $reversed-blue-gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.photo-card__wrapper {
+  display: flex;
+  padding: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.photo-card__icon {
+  width: 36px;
+  height: 36px;
+}
